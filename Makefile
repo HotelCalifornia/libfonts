@@ -20,7 +20,7 @@ EXTRA_CXXFLAGS=
 IS_LIBRARY:=1
 # TODO: CHANGE THIS!
 LIBNAME:=libfonts
-VERSION:=0.0.1
+VERSION:=0.0.3
 # EXCLUDE_SRC_FROM_LIB= $(SRCDIR)/unpublishedfile.c
 # this line excludes opcontrol.c and similar files
 EXCLUDE_SRC_FROM_LIB+=$(foreach file, $(SRCDIR)/opcontrol $(SRCDIR)/initialize $(SRCDIR)/autonomous,$(foreach cext,$(CEXTS),$(file).$(cext)) $(foreach cxxext,$(CXXEXTS),$(file).$(cxxext)))
@@ -28,7 +28,7 @@ EXCLUDE_SRC_FROM_LIB+=$(foreach file, $(SRCDIR)/opcontrol $(SRCDIR)/initialize $
 # files that get distributed to every user (beyond your source archive) - add
 # whatever files you want here. This line is configured to add all header files
 # that are in the the include directory get exported
-TEMPLATE_FILES=$(INCDIR)/fonts/**/*.h $(SRCDIR)/fonts/**/*.c
+TEMPLATE_FILES=$(INCDIR)/fonts/**/*.h
 
 .DEFAULT_GOAL=quick
 
