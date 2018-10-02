@@ -1,0 +1,11 @@
+bin/
+*.o
+program
+.vscode/
+libfonts@*.zip
+compile_commands.json
+.DS_store
+.cproject
+.idea/
+.project
+.settings/
