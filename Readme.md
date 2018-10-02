@@ -2,11 +2,13 @@
 
 Extra fonts to use with PROS 3 and LVGL
 
+![](https://puu.sh/BED9y/56195c8a71.png)
+
 ## How to use
 
 The first step is to download the template and install it:
-1. Download the latest libfonts@{version}.zip from the releases page
-2. Run `prosv5 c f path/to/downloaded/libfonts@{version}.zip`
+1. Download the latest libfonts.{version}.zip from the releases page
+2. Run `prosv5 c f path/to/downloaded/libfonts.{version}.zip`
 
 Now you can add the library to your project:
 1. `prosv5 c f libfonts`
