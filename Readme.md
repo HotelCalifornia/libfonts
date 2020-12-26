@@ -27,6 +27,8 @@ Make sure that you define symbols for the fonts you need _before_ including the 
 
 Now that you've enabled and included fonts of your choice, you can use them as you would normally use a font in LVGL. For more information about that, see the LVGL documentation about [fonts](https://littlevgl.com/basics#fonts) and [styles](https://littlevgl.com/basics#styles).
 
+(**Note**: since PROS is currently stuck using an old version of LVGL (5.3) the above links and site no longer work. For LVGL 5.3 docs, see the main LVGL repo)
+
 However, some of the fonts included in this library are unicode extensions, like Yu Gothic UI (provides Japanese Katakana and Hiragana) and Yu Gothic UI CJK (provides Kangxi/Kanji/Hanja characters). This means usually that they only contain the characters specified and nothing else, like punctuation. In order to make using fonts and extensions more seamless (than having to keep switching between them), LVGL provides the function `lv_font_add`, which can be used as in the following example:
 
 ```c
@@ -58,7 +60,7 @@ If you'd like to see a font added to this library, open an issue or a pull reque
 
 When making a PR, you need to do two things:
 
-1. Add the converted font file to src/fonts. You can use the [tool on LVGL's site](https://littlevgl.com/ttf-font-to-c-array) to convert a TTF file. This should be exported with a height of 20px and a BPP of 4.
+1. Add the converted font file to src/fonts. You can use the [tool on LVGL's site](https://lvgl.io/tools/font_conv_v5_3) to convert a TTF file. This should be exported with a height of 20px and a BPP of 4.
 2. Edit include/fonts/fonts.h to include the declaration of your font
 
 ## FAQ*
